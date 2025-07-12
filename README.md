@@ -23,7 +23,7 @@
 
 ```bash
 # Clone project
-git clone https://github.com/your-username/edu-market-hd.git
+git clone https://github.com/HongDiep18/EduMarketHD.git
 
 # Cài đặt dependencies
 npm install
