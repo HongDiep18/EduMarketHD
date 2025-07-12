@@ -2,31 +2,56 @@
 
 Đây là dự án web React **EduMarketHD** – một nền tảng marketplace cho các khóa học trực tuyến.
 
-## Tính năng
+##  **Công nghệ**
 
-- Tìm kiếm khóa học theo tên, danh mục, khoảng giá.
-- Thêm / Xóa yêu thích.
-- Thêm vào giỏ hàng.
-- Lịch sử xem khóa học.
-- Gợi ý AI khóa học phù hợp.
-- Mock Chatbot tư vấn.
+- **React**
+- **React Router**
+- **useState**, **useEffect**
+- **Axios** (mock API)
+- **CSS Flex/Grid**, Responsive
 
-##  Công nghệ sử dụng
+##  **Các chức năng chính**
 
-- ReactJS
-- React Router DOM
-- CSS thuần / SCSS
-- Mock dữ liệu JSON
-- Deploy: Vercel / Netlify
+### 1️ Hiển thị danh sách sản phẩm  
+- Mock data sản phẩm: Tên, Giá, Ảnh, Mô tả ngắn.
+- Nút "Xem chi tiết" mở Modal hiển thị thông tin đầy đủ.
+
+### 2️ Tìm kiếm & Lọc  
+- Thanh **Tìm kiếm** theo tên.
+- Bộ lọc giá: `<500K`, `500K–1 triệu`, `>1 triệu`.
+
+### 3️ Gợi ý thông minh (AI)  
+- Nút Gợi ý sản phẩm phù hợp (`AISuggestions`).
+- Trả về sản phẩm gợi ý (mock).
+- Có loading skeleton, xử lý lỗi.
+
+### 4️ Yêu thích  
+- Thêm/bỏ yêu thích.
+- Trang Yêu thích riêng.
+
+### 5️ Lịch sử xem *(Điểm cộng)*  
+- Ghi lại sản phẩm đã click.
+
+### 6️ Chatbot AI *(Mở rộng)*  
+- Giao diện Chatbot dưới góc phải.
+- Nhập từ khoá, nhận gợi ý giả lập.
+
+## **Demo**
+
+**Link Netlify:** [https://educationmarkethd.netlify.app/]
+**Link GitHub:** [https://github.com/HongDiep18/EduMarketHD]
+
 
 ##  Cách chạy local
 
 ```bash
 # Clone project
-git clone https://github.com/HongDiep18/EduMarketHD.git
+git clone https://github.com/HongDiep18/EduMarketHD
 
 # Cài đặt dependencies
 npm install
 
 # Chạy dev
 npm start
+
+
