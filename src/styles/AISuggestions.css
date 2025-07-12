@@ -1,0 +1,139 @@
+/* =============================
+   GỢI Ý THÔNG MINH - GRADIENT
+============================= */
+
+.ai-suggestions {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 16px;
+    padding: 2rem;
+    margin: 2rem auto;
+    /* tự canh giữa */
+    max-width: 1200px;
+    /* khung tối đa đồng bộ với container bên dưới */
+    width: 100%;
+    color: white;
+}
+
+.ai-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+    flex-wrap: wrap;
+    gap: 1rem;
+}
+
+.ai-header .btn.btn-primary {
+    margin: 0 1.5rem;
+}
+
+.ai-header h3 {
+    font-size: 1.25rem;
+    font-weight: 600;
+}
+
+.ai-header .btn.btn-primary {
+    background: #fcd34d;
+    /* vàng */
+    color: #111;
+    padding: 0.5rem 1rem;
+    border-radius: 8px;
+    font-weight: 600;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.ai-header .btn.btn-primary:hover {
+    background: #fbbf24;
+}
+
+.suggestions-list {
+    margin-top: 1rem;
+}
+
+.suggestions-list h4 {
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    opacity: 0.9;
+}
+
+.suggestions-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+}
+
+.suggestion-item {
+    display: flex;
+    gap: 0.75rem;
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 12px;
+    padding: 0.75rem;
+    backdrop-filter: blur(12px);
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.suggestion-item img {
+    width: 60px;
+    height: 45px;
+    border-radius: 6px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.suggestion-info {
+    flex: 1;
+}
+
+.suggestion-info h5 {
+    font-size: 0.9rem;
+    font-weight: 600;
+    line-height: 1.3;
+    margin-bottom: 4px;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.suggestion-price {
+    font-size: 0.8rem;
+    font-weight: 600;
+    color: #fcd34d;
+    /* vàng nổi */
+}
+
+.suggestion-item:hover {
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+}
+
+.suggestion-item:hover img {
+    transform: scale(1.1);
+}
+
+.suggestion-item:hover .suggestion-info h5 {
+    color: #fff;
+}
+
+/* =============================
+   RESPONSIVE
+============================= */
+
+/* Tablet */
+@media (max-width: 1024px) {
+    .ai-suggestions {
+        padding: 1.5rem;
+        margin: 1.5rem auto;
+    }
+}
+
+/* Mobile */
+@media (max-width: 640px) {
+    .ai-suggestions {
+        padding: 1rem;
+        margin: 1rem auto;
+    }
+}
