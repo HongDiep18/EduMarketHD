@@ -29,10 +29,10 @@
 - Thêm/bỏ yêu thích.
 - Trang Yêu thích riêng.
 
-### 5️ Lịch sử xem *(Điểm cộng)*  
+### 5️ Lịch sử xem 
 - Ghi lại sản phẩm đã click.
 
-### 6️ Chatbot AI *(Mở rộng)*  
+### 6️ Chatbot AI 
 - Giao diện Chatbot dưới góc phải.
 - Nhập từ khoá, nhận gợi ý giả lập.
 
